@@ -1,0 +1,362 @@
+/* ================================
+   GROAS MARKETING – BRAND VARIABLES
+================================ */
+
+:root {
+  --brand-blue: #0A73FF;
+  --brand-blue-dark: #0759cc;
+  --white: #ffffff;
+  --black: #0b0b0b;
+  --grey: #4a4a4a;
+  --light-grey: #f4f6fb;
+}
+
+/* ================================
+   GLOBAL RESET & BASE
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--brand-blue);
+  color: var(--black);
+  line-height: 1.6;
+}
+
+/* ================================
+   LAYOUT
+================================ */
+
+section {
+  padding: 70px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ================================
+   TYPOGRAPHY
+================================ */
+
+h1, h2, h3 {
+  font-weight: 800;
+  color: var(--black);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--grey);
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+
+/* ================================
+   HERO SPLIT – PORTFOLIO STYLE
+================================ */
+
+.hero-split {
+  background-color: var(--brand-blue);
+  padding: 80px 20px;
+}
+
+.hero-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* LEFT SIDE */
+.hero-left {
+  color: var(--white);
+}
+
+.hero-left h1 {
+  color: var(--white);
+  font-size: 2.6rem;
+}
+
+.hero-left p {
+  color: var(--white);
+  max-width: 520px;
+  margin: 20px 0 30px;
+}
+
+/* RIGHT SIDE */
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-card {
+  background-color: var(--white);
+  padding: 36px;
+  border-radius: 8px;
+  max-width: 420px;
+  width: 100%;
+}
+
+.hero-card h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.hero-card p {
+  color: var(--black);
+  font-weight: 500;
+}
+
+.hero-note {
+  font-size: 0.95rem;
+  color: var(--grey);
+}
+
+.hero-divider {
+  width: 40px;
+  height: 3px;
+  background-color: var(--brand-blue);
+  margin: 18px 0;
+}
+
+/* ================================
+   DESKTOP SPLIT
+================================ */
+
+@media (min-width: 900px) {
+
+  .hero-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-left {
+    width: 55%;
+  }
+
+  .hero-right {
+    width: 40%;
+  }
+
+  .hero-left h1 {
+    font-size: 3.4rem;
+  }
+
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+.cta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: var(--white);
+  color: var(--brand-blue);
+  padding: 14px 26px;
+  font-weight: 700;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--light-grey);
+}
+
+.btn-secondary {
+  border: 2px solid var(--white);
+  color: var(--white);
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--white);
+  color: var(--brand-blue);
+}
+
+/* ================================
+   GRID SYSTEM
+================================ */
+
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+/* ================================
+   CARDS / BLOCKS
+================================ */
+
+.card,
+.step,
+.service,
+.compare-box {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 26px;
+}
+
+/* ================================
+   PROBLEM SECTION
+================================ */
+
+.problems h2 {
+  color: var(--white);
+}
+
+.problems .card {
+  font-weight: 600;
+}
+
+/* ================================
+   FRAMEWORK
+================================ */
+
+.framework h2 {
+  color: var(--white);
+}
+
+.framework .step h3 {
+  color: var(--brand-blue);
+}
+
+/* ================================
+   SERVICES
+================================ */
+
+.services h2 {
+  color: var(--white);
+}
+
+/* ================================
+   AUTHORITY SECTION
+================================ */
+
+.authority {
+  background-color: var(--white);
+}
+
+.authority h2 {
+  margin-bottom: 20px;
+}
+
+.authority li {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* ================================
+   COMPARISON
+================================ */
+
+.comparison h2 {
+  color: var(--white);
+}
+
+/* .compare-box.faded {
+  opacity: 0.5;
+} */
+
+/* ================================
+   FINAL CTA
+================================ */
+
+.final-cta {
+  background-color: var(--white);
+  text-align: center;
+}
+
+.final-cta h2 {
+  color: var(--black);
+  margin-bottom: 24px;
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+  background-color: var(--brand-blue);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer p {
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.footer-cta {
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* ================================
+   RESPONSIVE (DESKTOP)
+================================ */
+
+@media (min-width: 768px) {
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  .cta-group {
+    flex-direction: row;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
